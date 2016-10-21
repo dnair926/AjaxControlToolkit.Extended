@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "CharacterCount/CharacterCountBehavior.min.js",
+    "inputFiles": [
+      "CharacterCount/CharacterCountBehavior.js"
+    ]
+  },
+  {
+    "outputFileName": "CharacterCount/CharacterCount.min.css",
+    "inputFiles": [
+      "CharacterCount/CharacterCount.css"
+    ]
+  },
+  {
+    "outputFileName": "CharacterCount/CharacterCountStyle.min.css",
+    "inputFiles": [
+      "CharacterCount/CharacterCountStyle.css"
+    ]
+  },
+  {
+    "outputFileName": "CapsLock/CapsLockBehavior.min.js",
+    "inputFiles": [
+      "CapsLock/CapsLockBehavior.js"
+    ]
+  },
+  {
+    "outputFileName": "CapsLock/CapsLockStyle.min.css",
+    "inputFiles": [
+      "CapsLock/CapsLockStyle.css"
+    ]
+  }
+]
