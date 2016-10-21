@@ -49,6 +49,7 @@
     <Compile Include="CapsLock\CapsLockExtender.cs" />
     <Compile Include="CharacterCount\CharacterCountExtender.cs" />
     <Compile Include="CharacterCount\CharacterCountPosition.cs" />
+    <Compile Include="ClientSide\ClientSideExtender.cs" />
     <Compile Include="ExtenderBase\Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
