@@ -1,7 +1,16 @@
-﻿using System;
+﻿using AjaxControlToolkit.Extenders;
+using System;
 using System.ComponentModel;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
+[assembly: WebResource(Constants.CapsLockScriptName + Constants.JsPostfix, "text/javascript")]
+[assembly: WebResource(Constants.CapsLockScriptName + Constants.MinifiedJsPostfix, "text/javascript")]
+[assembly: WebResource(Constants.CapsLockStyleName + Constants.CssPostfix, "text/css")]
+[assembly: WebResource(Constants.CapsLockStyleName + Constants.MinCssPostfix, "text/css")]
+[assembly: WebResource(Constants.CapsLockAlertLargeImage, "image/gif")]
+[assembly: WebResource(Constants.CapsLockAlertSmallImage, "image/gif")]
+[assembly: WebResource(Constants.CapsLockCloseImage, "image/gif")]
 
 namespace AjaxControlToolkit.Extenders
 {
@@ -28,8 +37,8 @@ namespace AjaxControlToolkit.Extenders
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1056:UriPropertiesShouldNotBeStrings", Justification = "Using string to avoid Uri complications")]
         public string WarningIconImageUrl
         {
-            get { return GetPropertyValue("WarningIconImageUrl", (string)null) ?? (DesignMode ? "" : Page.ClientScript.GetWebResourceUrl(typeof(CapsLockExtender), "AjaxControlToolkit.Images.alert-large.gif")); }
-            set { SetPropertyValue("WarningIconImageUrl", value); }
+            get { return GetPropertyValue(nameof(WarningIconImageUrl), (string)null) ?? (DesignMode ? "" : Page.ClientScript.GetWebResourceUrl(typeof(CapsLockExtender), Constants.CapsLockAlertLargeImage)); }
+            set { SetPropertyValue(nameof(WarningIconImageUrl), value); }
         }
 
         [DefaultValue("")]
@@ -39,8 +48,8 @@ namespace AjaxControlToolkit.Extenders
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1056:UriPropertiesShouldNotBeStrings", Justification = "Using string to avoid Uri complications")]
         public string CloseImageUrl
         {
-            get { return GetPropertyValue("CloseImageUrl", (string)null) ?? (DesignMode ? "" : Page.ClientScript.GetWebResourceUrl(typeof(CapsLockExtender), "AjaxControlToolkit.Images.close.gif")); }
-            set { SetPropertyValue("CloseImageUrl", value); }
+            get { return GetPropertyValue(nameof(CloseImageUrl), (string)null) ?? (DesignMode ? "" : Page.ClientScript.GetWebResourceUrl(typeof(CapsLockExtender), Constants.CapsLockCloseImage)); }
+            set { SetPropertyValue(nameof(CloseImageUrl), value); }
         }
 
         [DefaultValue("")]
@@ -48,8 +57,8 @@ namespace AjaxControlToolkit.Extenders
         [ClientPropertyName("cssClass")]
         public string CssClass
         {
-            get { return GetPropertyValue("CssClass", string.Empty); }
-            set { SetPropertyValue("CssClass", value); }
+            get { return GetPropertyValue(nameof(CssClass), string.Empty); }
+            set { SetPropertyValue(nameof(CssClass), value); }
         }
 
         [DefaultValue(typeof(Unit), "")]
@@ -57,8 +66,8 @@ namespace AjaxControlToolkit.Extenders
         [ClientPropertyName("width")]
         public Unit Width
         {
-            get { return GetPropertyValue("Width", Unit.Empty); }
-            set { SetPropertyValue("Width", value); }
+            get { return GetPropertyValue(nameof(Width), Unit.Empty); }
+            set { SetPropertyValue(nameof(Width), value); }
         }
 
         /// <summary>

@@ -10,13 +10,22 @@
             MinCssPostfix = ".min" + CssPostfix,
 
             baseNamespace = "AjaxControlToolkit.Extenders",
+
+            ScriptsBaseName = baseNamespace + ".Scripts",
+
+            StylesBaseName = baseNamespace + ".Styles",
+
+            ImagesBaseName = baseNamespace + ".Images",
             
-            CharacterCountScriptName = baseNamespace + ".Scripts.CharacterCountBehavior",
+            CharacterCountScriptName = ScriptsBaseName + ".CharacterCountBehavior",
+            CharacterCountStyleName = StylesBaseName + ".CharacterCountStyle",
 
-            CharacterCountStyleName = baseNamespace + ".Styles.CharacterCountStyle",
+            CapsLockScriptName = ScriptsBaseName + ".CapsLockBehavior",
+            CapsLockStyleName = StylesBaseName + ".CapsLockStyle",            
+            CapsLockAlertLargeImage = ImagesBaseName + ".CapsLock.alert-large.gif",
+            CapsLockAlertSmallImage = ImagesBaseName + ".CapsLock.alert-small.gif",
+            CapsLockCloseImage = ImagesBaseName + ".CapsLock.close.gif",
 
-            CapsLockScriptName = baseNamespace + ".Scripts.CapsLockBehavior",
-
-            CapsLockStyleName = baseNamespace + ".Styles.CapsLockStyle";
+            PlaceHolder = "";
     }
 }

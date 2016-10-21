@@ -74,6 +74,9 @@
     <EmbeddedResource Include="Styles\CapsLockStyle.min.css">
       <DependentUpon>CapsLockStyle.css</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\CapsLock.alert-large.gif" />
+    <EmbeddedResource Include="Images\CapsLock.alert-small.gif" />
+    <EmbeddedResource Include="Images\CapsLock.close.gif" />
     <Content Include="Styles\CharacterCountStyle.min.css">
       <DependentUpon>CharacterCountStyle.css</DependentUpon>
     </Content>

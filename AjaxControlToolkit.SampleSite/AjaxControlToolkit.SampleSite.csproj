@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="CapsLock\CapsLock.aspx" />
     <Content Include="CharacterCount\CharacterCount.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -177,6 +178,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CapsLock\CapsLock.aspx.cs">
+      <DependentUpon>CapsLock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapsLock\CapsLock.aspx.designer.cs">
+      <DependentUpon>CapsLock.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CharacterCount\CharacterCount.aspx.cs">
       <DependentUpon>CharacterCount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

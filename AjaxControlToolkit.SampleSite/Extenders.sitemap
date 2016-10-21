@@ -3,5 +3,6 @@
     <siteMapNode>
       <siteMapNode url="~/Default.aspx" title="HOME" />
       <siteMapNode url="~/CharacterCount/CharacterCount.aspx" title="Character Count" />
+      <siteMapNode url="~/CapsLock/CapsLock.aspx" title="Caps Lock" />
     </siteMapNode>
 </siteMap>
