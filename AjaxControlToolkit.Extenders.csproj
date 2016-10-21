@@ -49,7 +49,8 @@
     <Compile Include="CapsLock\CapsLockExtender.cs" />
     <Compile Include="CharacterCount\CharacterCountExtender.cs" />
     <Compile Include="CharacterCount\CharacterCountPosition.cs" />
-    <Compile Include="ClientSide\ClientSideExtender.cs" />
+    <Compile Include="Custom\CustomExtender.cs" />
+    <Compile Include="Custom\CustomTargetControlType.cs" />
     <Compile Include="ExtenderBase\Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +79,10 @@
     <EmbeddedResource Include="Images\CapsLock.alert-large.gif" />
     <EmbeddedResource Include="Images\CapsLock.alert-small.gif" />
     <EmbeddedResource Include="Images\CapsLock.close.gif" />
+    <EmbeddedResource Include="Scripts\CustomBehavior.js" />
+    <EmbeddedResource Include="Scripts\CustomBehavior.min.js">
+      <DependentUpon>CustomBehavior.js</DependentUpon>
+    </EmbeddedResource>
     <Content Include="Styles\CharacterCountStyle.min.css">
       <DependentUpon>CharacterCountStyle.css</DependentUpon>
     </Content>

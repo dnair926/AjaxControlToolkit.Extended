@@ -26,6 +26,8 @@
             CapsLockAlertSmallImage = ImagesBaseName + ".CapsLock.alert-small.gif",
             CapsLockCloseImage = ImagesBaseName + ".CapsLock.close.gif",
 
+            CustomScriptName = ScriptsBaseName + ".CustomBehavior",
+
             PlaceHolder = "";
     }
 }

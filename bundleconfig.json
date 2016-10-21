@@ -28,5 +28,11 @@
     "inputFiles": [
       "CapsLock/CapsLockStyle.css"
     ]
+  },
+  {
+    "outputFileName": "Scripts/CustomBehavior.min.js",
+    "inputFiles": [
+      "Scripts/CustomBehavior.js"
+    ]
   }
 ]
