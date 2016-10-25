@@ -20,6 +20,8 @@
             CharacterCountScriptName = ScriptsBaseName + ".CharacterCountBehavior",
             CharacterCountStyleName = StylesBaseName + ".CharacterCountStyle",
 
+            CommonScriptName = ScriptsBaseName + ".Common",
+
             CapsLockScriptName = ScriptsBaseName + ".CapsLockBehavior",
             CapsLockStyleName = StylesBaseName + ".CapsLockStyle",            
             CapsLockAlertLargeImage = ImagesBaseName + ".CapsLock.alert-large.gif",
@@ -27,6 +29,8 @@
             CapsLockCloseImage = ImagesBaseName + ".CapsLock.close.gif",
 
             CustomScriptName = ScriptsBaseName + ".CustomBehavior",
+
+            VisibilityScriptName = ScriptsBaseName + ".VisibilityBehavior",
 
             PlaceHolder = "";
     }

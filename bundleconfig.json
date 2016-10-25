@@ -34,5 +34,17 @@
     "inputFiles": [
       "Scripts/CustomBehavior.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/VisibilityBehavior.min.js",
+    "inputFiles": [
+      "Scripts/VisibilityBehavior.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Common.min.js",
+    "inputFiles": [
+      "Scripts/Common.js"
+    ]
   }
 ]

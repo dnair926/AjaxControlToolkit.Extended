@@ -51,8 +51,13 @@
     <Compile Include="CharacterCount\CharacterCountPosition.cs" />
     <Compile Include="Custom\CustomExtender.cs" />
     <Compile Include="Custom\CustomTargetControlType.cs" />
+    <Compile Include="ExtenderBase\CommonScripts.cs" />
     <Compile Include="ExtenderBase\Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visibility\ParentControlType.cs" />
+    <Compile Include="Visibility\TargetControlType.cs" />
+    <Compile Include="Visibility\VisibilityExtender.cs" />
+    <Compile Include="Visibility\VisibilityMode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bundleconfig.json" />
@@ -82,6 +87,14 @@
     <EmbeddedResource Include="Scripts\CustomBehavior.js" />
     <EmbeddedResource Include="Scripts\CustomBehavior.min.js">
       <DependentUpon>CustomBehavior.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripts\VisibilityBehavior.js" />
+    <EmbeddedResource Include="Scripts\VisibilityBehavior.min.js">
+      <DependentUpon>VisibilityBehavior.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripts\Common.js" />
+    <EmbeddedResource Include="Scripts\Common.min.js">
+      <DependentUpon>Common.js</DependentUpon>
     </EmbeddedResource>
     <Content Include="Styles\CharacterCountStyle.min.css">
       <DependentUpon>CharacterCountStyle.css</DependentUpon>

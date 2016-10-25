@@ -2,7 +2,8 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode>
       <siteMapNode url="~/Default.aspx" title="HOME" />
-      <siteMapNode url="~/CharacterCount/CharacterCount.aspx" title="Character Count" />
       <siteMapNode url="~/CapsLock/CapsLock.aspx" title="Caps Lock" />
+      <siteMapNode url="~/CharacterCount/CharacterCount.aspx" title="Character Count" />
+      <siteMapNode url="~/Visibility/Visibility.aspx" title="Visibility" />
     </siteMapNode>
 </siteMap>

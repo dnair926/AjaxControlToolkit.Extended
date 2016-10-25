@@ -156,6 +156,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Visibility\Visibility.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -245,6 +246,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Visibility\Visibility.aspx.cs">
+      <DependentUpon>Visibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visibility\Visibility.aspx.designer.cs">
+      <DependentUpon>Visibility.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
