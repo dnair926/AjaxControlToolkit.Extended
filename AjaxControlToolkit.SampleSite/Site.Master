@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AjaxControlToolkit.SampleSite.SiteMaster" %>
+
 <%@ Import Namespace="System.Web.Optimization" %>
 
 <!DOCTYPE html>
@@ -14,7 +15,7 @@
         <%: Styles.Render("~/Content/AjaxControlToolkit/Styles/Bundle") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
@@ -48,25 +49,21 @@
                     </button>
                     <a class="navbar-brand" runat="server" href="~/">AjaxControlToolkit Extenders</a>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="container body-content">
             <div class="body-container">
                 <div class="row">
-                <div class="col-md-3">
-                    <asp:Repeater ID="SamplesLinks" runat="server" DataSourceID="ExtendersSiteMap" EnableViewState="false">
-                        <ItemTemplate>
-                            <asp:HyperLink ID="SamplesLink" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Url") %>' EnableViewState="false" /><br />
-                        </ItemTemplate>
-                    </asp:Repeater>
-                    <asp:SiteMapDataSource ID="ExtendersSiteMap" runat="server" SiteMapProvider="ExtendersSiteMap" ShowStartingNode="false" />
-                </div>
+                    <div class="col-md-2">
+                        <div class="extenders-nav">
+                            <asp:Repeater ID="SamplesLinks" runat="server" DataSourceID="ExtendersSiteMap" EnableViewState="false">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="SamplesLink" runat="server" Text='<%# Eval("Title") %>' NavigateUrl='<%# Eval("Url") %>' EnableViewState="false" /><br />
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SiteMapDataSource ID="ExtendersSiteMap" runat="server" SiteMapProvider="ExtendersSiteMap" ShowStartingNode="false" />
+                        </div>
+                    </div>
                 <div class="col-md-9">
                     <asp:ContentPlaceHolder ID="Content" runat="server">
                     </asp:ContentPlaceHolder>
@@ -75,7 +72,6 @@
             </div>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - AjaxControlToolkit Extenders</p>
             </footer>
         </div>
     </form>

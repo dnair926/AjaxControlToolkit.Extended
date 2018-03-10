@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="DemoContent" runat="server">
     Start typing to see the character count demonstration:<br />
-    <asp:TextBox ID="tbCharacterCount" runat="server" style="width:500px;" />
+    <asp:TextBox ID="tbCharacterCount" runat="server" style="width:500px;" CssClass="form-control" />
     <ate:CharacterCountExtender ID="cceDemo1" runat="server" TargetControlID="tbCharacterCount" MaxCharLength="100" WarningPercentage="75" PopupPosition="TopLeft" />
 </asp:Content>
 

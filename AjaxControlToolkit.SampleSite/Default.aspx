@@ -2,6 +2,13 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="Content" runat="server">
 
-    This project contains some additional extenders not accepted by AjaxControlToolkit team.
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Home
+        </div>
+        <div class="panel-body">
+            ASP.net Extender controls created based on the DevExpress AjaxControlToolkit.
+        </div>
+    </div>
 
 </asp:Content>

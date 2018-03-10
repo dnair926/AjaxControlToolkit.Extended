@@ -5,3 +5,4 @@ obj
 packages/
 /.vs/config
 /AjaxControlToolkit.SampleSite/bin
+/.vs/AjaxControlToolkit.Extended/v15/Server/sqlite3

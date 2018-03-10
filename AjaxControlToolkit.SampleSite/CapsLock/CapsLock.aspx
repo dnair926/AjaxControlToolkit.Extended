@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="DemoContent" runat="server">
     Turn on Caps Lock key and start typing to see the Caps Lock message:<br />
-    <asp:TextBox ID="tbCapsLock" runat="server" style="width: 500px;" />
+    <asp:TextBox ID="tbCapsLock" runat="server" style="width: 500px;" CssClass="form-control" />
     <ate:CapsLockExtender ID="ceDemo" TargetControlID="tbCapsLock" runat="server" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="InfoContent" runat="server">

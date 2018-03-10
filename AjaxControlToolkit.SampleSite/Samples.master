@@ -1,11 +1,14 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Samples.master.cs" Inherits="AjaxControlToolkit.SampleSite.Samples" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
-    <div class="demoarea">
-        <div class="demoheading">
+    <div class="panel panel-info">
+        <div class="panel-heading">
             <asp:ContentPlaceHolder ID="DemoHeading" runat="server" />
         </div>
-        <asp:ContentPlaceHolder ID="DemoContent" runat="server" />
+        <div class="panel-body">
+            <asp:ContentPlaceHolder ID="DemoContent" runat="server" />
+        </div>
     </div>
     <div class="demobottom"></div>
-    <asp:ContentPlaceHolder ID="InfoContent" runat ="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="InfoContent" runat="server"></asp:ContentPlaceHolder>
 </asp:Content>
