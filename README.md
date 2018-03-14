@@ -1,8 +1,5 @@
 # AjaxControlToolkit.Extended
 <p>This project includes some custom Ajax Extenders that I created to make my life easier while creating ASP.Net Webforms applications.  and is based on the DevExpress AjaxControlToolkit (https://github.com/DevExpress/AjaxControlToolkit) project.</p>
-<p>I had submitted pull requests for these extenders when this project was under CodePlex but was declined because it was deemed to be basic functionalities that do not need extenders https://ajaxcontroltoolkit.codeplex.com/SourceControl/network/forks/dnair926/NewExtenders/contribution/1454. I think that was a judgment by the cover becuase I think having these functionalities in an extender helps in many ways and they tackle some problems that comes with having a custom script in the application.</p>
-<p>Having an extender prevents the need to hardcode element ids and eliminates the tedious task of changing ids in script when the extended element's unique id changes.  Additionally, it handles the issue with controls losing attributes set on client-side during a post-back on the page.</p>
-<p>My colleagues have appreciated these extenders and is currently used in all applications that is created in our firm.</p>
 
 <ol>
 <b>Extenders:</b>
